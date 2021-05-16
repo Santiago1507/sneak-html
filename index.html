@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneak</title>
+
+    <link rel="stylesheet" href="assets/styles/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__collapse-menu" id="collapse"></div>
+      <a href="/">
+        <img class="header__img" src="assets/statics/logo.png" alt="Sneak" />
+        <img class="header__img mobile" src="assets/statics/logoMobile.png" alt="Sneak" />
+      </a>
+
+      <div class="header__menu" id="menu">
+        <ul>
+          <li><a href="#grid" data-value="branding-web-photography-app" class="active">All</a></li>
+          <li><a href="#grid" data-value="branding">Branding</a></li>
+          <li><a href="#grid" data-value="web">Web</a></li>
+          <li><a href="#grid" data-value="photography">Photography</a></li>
+          <li><a href="#grid" data-value="app">App</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="banner">
+      <h1 class="banner__title">EXPLORE BEYOND HORIZON</h1>
+      <p class="banner__info">
+        Magna mundi referrentur quo, no rebum dignissmi qui. <br />
+        Per quodsi accusata id, agam labores.
+      </p>
+      <button class="banner__btn" type="button">VIEW OUR WORK</button>
+    </section>
+
+    <section class="dist">
+      <div class="dist__view">
+        <img class="dist__view--img disable" id="grid" src="assets/statics/grid-view.svg" alt="grid view" />
+        <img class="dist__view--img" id="row" src="assets/statics/row-view.svg" alt="row view" />
+      </div>
+
+      <div class="header__menu">
+        <ul>
+          <li><a href="#grid" data-value="branding-web-photography-app" class="active">All</a></li>
+          <li><a href="#grid" data-value="branding">Branding</a></li>
+          <li><a href="#grid" data-value="web">Web</a></li>
+          <li><a href="#grid" data-value="photography">Photography</a></li>
+          <li><a href="#grid" data-value="app">App</a></li>
+          <div class="header__search">
+            <input type="text" class="input" id="search-bar" required />
+            <img class="header__search--iconSearch" src="assets/statics/search.svg" alt="icon-search" id="icon-search"/>
+          </div>
+        </ul>
+      </div>
+
+      <div class="content-panel">
+        <div class="content-panel__container grid" id="main-panel"></div>
+
+        <div class="content__btn">
+          <button class="content-pane__btn-more" id="show-more" type="button" data-query="brand-web-photography-app">Show Me More</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2016 - Sneak All Right Reserved</p>
+      <div class="footer__social">
+        <img src="assets/statics/google-icon.png" alt="" />
+        <img src="assets/statics/twitter-icon.png" alt="" />
+        <img src="assets/statics/google-icon.png" alt="" />
+        <img src="assets/statics/twitter-icon.png" alt="" />
+      </div>
+    </footer>
+
+    <script src="js/app.js" type="module" defer></script>
+  </body>
+</html>
